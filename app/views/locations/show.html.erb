@@ -62,5 +62,5 @@
     <% else %>
     <p> .. sorry there is no buss near you. Call an Uber </p>
     <% end %>
-<%= link_to 'Edit', edit_location_path(@location) %> |
-<%= link_to 'Back', locations_path %>
+<%= link_to 'Edit', edit_location_path(@location), :class => 'btn btn-primary btn-primary btn-xs'  %> |
+<%= link_to 'Back', locations_path, :class => 'btn btn-warning btn-primary btn-xs'  %>
