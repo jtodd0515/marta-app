@@ -1,3 +1,18 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="navbar-brand">Marta
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <% link_to Rails.application.class.parent_name, root_url, :class=> "navbar-brand" %>
+  </div>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="nav navbar-nav">
+      <li>
+        <%= link_to "Locations", locations_url %>
+      </li>
+    </ul>
+  </div>
+</nav>
 <%= notice %>
 <h1>Is there a bus nearby?</h1>
 <p>

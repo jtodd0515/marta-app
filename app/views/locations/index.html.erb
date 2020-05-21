@@ -1,3 +1,18 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="navbar-brand">Marta
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <% link_to Rails.application.class.parent_name, root_url, :class=> "navbar-brand" %>
+  </div>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="nav navbar-nav">
+      <li>
+        <%= link_to "Locations", locations_url %>
+      </li>
+    </ul>
+  </div>
+</nav>
 <p id="notice"><%= notice %></p>
 
 <h1>Locations</h1>
@@ -30,4 +45,4 @@
 
 <br>
 
-<%= link_to 'New Location', new_location_path %>
+<button><%= link_to 'New Location', new_location_path %></button>

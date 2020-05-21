@@ -1,3 +1,4 @@
+<div class="container">
 <%= form_with(model: location, local: true) do |form| %>
 <% if location.errors.any? %>
 <div id="error_explanation">
@@ -23,5 +24,6 @@
 
 <div class="actions">
     <%= form.submit %>
+</div>
 </div>
 <% end %>

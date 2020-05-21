@@ -12,9 +12,12 @@
 </head>
 
 <body>
+
+<div class="container">
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=<%= Figaro.env.google_map_api_key%>"></script>
     
     <%= yield %>
+</div>
 </body>
 
 </html>
